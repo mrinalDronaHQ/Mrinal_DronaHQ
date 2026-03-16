@@ -1,0 +1,168 @@
+{
+    "channel_id": 9948,
+    "category_id": 15647,
+    "sub_category_id": 86261,
+    "response": {
+        "success": "true",
+        "content": [],
+        "ContentType": "application/json; charset=utf-8",
+        "StatusCode": 200,
+        "StatusDescription": "OK"
+    },
+    "failure": {
+        "Header": [],
+        "StatusCode": 0,
+        "StatusDescription": "",
+        "content": "",
+        "success": false
+    },
+    "failureCondition": [],
+    "request": {
+        "method": "DB_QUERY",
+        "body": {
+            "raw": "INSERT INTO `Products` ( `product_id`,`product_name`,`description`,`price`,`stock_quantity`,`created_at`,`updated_at` ) VALUES ({{product_id}},'{{product_name}}','{{description}}',{{price}},{{stock_quantity}},'{{created_at}}','{{updated_at}}');",
+            "variables": [
+                {
+                    "keyName": "product_id",
+                    "keyID": " ",
+                    "keyValue": "{{product_id}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "product_name",
+                    "keyID": " ",
+                    "keyValue": "{{product_name}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "description",
+                    "keyID": " ",
+                    "keyValue": "{{description}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "price",
+                    "keyID": " ",
+                    "keyValue": "{{price}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "stock_quantity",
+                    "keyID": " ",
+                    "keyValue": "{{stock_quantity}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "created_at",
+                    "keyID": " ",
+                    "keyValue": "{{created_at}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "updated_at",
+                    "keyID": " ",
+                    "keyValue": "{{updated_at}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                }
+            ],
+            "mode": "db_query",
+            "queryEditor": "sql"
+        },
+        "header": [],
+        "url": {
+            "raw": "",
+            "protocol": "",
+            "query": [],
+            "param": []
+        },
+        "account_id": "",
+        "description": "",
+        "remove_empty_keys": false,
+        "skip_uri_component_encoding": false,
+        "request_timeout": 0
+    },
+    "name": "variable_R6H9dlTkjhCdrLbOt1773415123024",
+    "subCatDescription": null,
+    "proxy": false,
+    "bindable": true,
+    "preselectfields": [
+        {
+            "field_key": "body.product_id",
+            "field_name": "product_id",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.product_name",
+            "field_name": "product_name",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.description",
+            "field_name": "description",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.price",
+            "field_name": "price",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.stock_quantity",
+            "field_name": "stock_quantity",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.created_at",
+            "field_name": "created_at",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.updated_at",
+            "field_name": "updated_at",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        }
+    ],
+    "preselectvariables": [],
+    "plugin_id": 76595,
+    "instructions": null,
+    "includeBodyHash": false,
+    "cat_format_id": "faf2c878-1eee-11f1-b23a-0affd2bb4c4d",
+    "format_id": "ed0d726c-1eef-11f1-b23a-0affd2bb4c4d",
+    "service_type": null,
+    "is_deleted": 0
+}
