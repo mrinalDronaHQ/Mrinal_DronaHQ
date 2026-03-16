@@ -1,0 +1,304 @@
+{
+    "__dhq_default_formula_Dtype": "string",
+    "__dhq_formula_Dtype": "string",
+    "__LiveData_Dtype": "object",
+    "allow_options_addition_in_editor": true,
+    "background_color": "var(--DHQ-neutral-bg-color)",
+    "border_color": "var(--DHQ-border-color)",
+    "caching": false,
+    "cid": "c5415RCUn2FBIlTtjCOkDx",
+    "class_name": "test",
+    "container_img_height": "56",
+    "container_img_height_unit": "px",
+    "container_radius": "4",
+    "container_radius_unit": "px",
+    "ctrl_id": "",
+    "data_submission_enabled": true,
+    "data_type": "string",
+    "default_field_options_structure": {
+        "name": "Fruit",
+        "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/fruit_lPf3C.jpg",
+        "selected": false
+    },
+    "desktop_no_selection": "4",
+    "dfmv_selected": "default",
+    "dhq_config": {
+        "strict_update": [
+            "for_localization",
+            "dhq_config"
+        ],
+        "update_to_theme_varaibles": [
+            "selected_border_color",
+            "container_radius",
+            "container_radius_unit",
+            "label_font_size",
+            "label_font_size_unit",
+            "label_font_weight",
+            "label_text_color",
+            "container_img_height",
+            "container_img_height_unit",
+            "text_font_size",
+            "text_font_size_unit",
+            "text_style_font_size",
+            "text_style_font_size_unit",
+            "text_style_font_weight",
+            "text_font_weight",
+            "text_style_text_color",
+            "text_text_color",
+            "selected_imgback_color",
+            "background_color",
+            "border_color",
+            "selected_background_color"
+        ]
+    },
+    "dhq_data_process": "",
+    "dhq_default_data_process": "",
+    "dhq_default_formula": "",
+    "dhq_external_css": {
+        "addCode": false,
+        "data": {}
+    },
+    "dhq_nsf_replaced": false,
+    "dhq_olddt_map": {},
+    "dhq_req_stats": {
+        "status": ""
+    },
+    "dhq_submit_condition": "always",
+    "dhq_tfd": true,
+    "dhqEvtConverted": true,
+    "dhqGrid": {
+        "w": 22,
+        "h": 47,
+        "x": 1,
+        "y": 38
+    },
+    "dhqGridChanged": false,
+    "dhqGridDesktop": {
+        "w": 18,
+        "h": 31,
+        "x": 3,
+        "y": 36
+    },
+    "dhqMGridChanged": true,
+    "disabled": false,
+    "enable_fx": {},
+    "field_available_in_database_editor": true,
+    "field_composition_type": "list",
+    "field_config": {},
+    "field_data_model": "",
+    "field_data_model_binding_default_value_query": "",
+    "field_data_model_binding_default_value_query_with_id": "",
+    "field_data_model_binding_formula": "",
+    "field_data_model_binding_manual_query": "",
+    "field_data_model_binding_manual_query_with_id": "",
+    "field_data_model_binding_type": "",
+    "field_database_editor_data_format": "single_select",
+    "field_datatypes": [],
+    "field_display_key_name": "imagechoice1",
+    "field_editable_in_database_editor": true,
+    "field_fullview": false,
+    "field_key_name": "dhq_image_radio_btn_c5415RCUn2FBIlTtjCOkDx",
+    "field_options": {
+        "options": [
+            {
+                "name": "Personal Loan",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group_dHh6s.png",
+                "selected": true
+            },
+            {
+                "name": "Business Loan",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-9_jUWyM.png",
+                "selected": false
+            },
+            {
+                "name": "Gold Loan",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-5_ayUYH.png",
+                "selected": false
+            },
+            {
+                "name": "Home Loan",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-2_aFY8e.png",
+                "selected": false
+            },
+            {
+                "name": "Auto Loan",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-10_8EjPg.png",
+                "selected": false
+            },
+            {
+                "name": "LAP",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-6_uBdX1.png",
+                "selected": false
+            },
+            {
+                "name": "LAIP",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-8_nqnmA.png",
+                "selected": false
+            },
+            {
+                "name": "LAFD",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-4_c9iYJ.png",
+                "selected": false
+            },
+            {
+                "name": "LAMF",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-3_Vhe2L.png",
+                "selected": false
+            },
+            {
+                "name": "Education Loan ",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-1_CdqsE.png",
+                "selected": false
+            },
+            {
+                "name": "Vehicle Loan",
+                "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-7_bAPVL.png",
+                "selected": false
+            }
+        ],
+        "main_config": {
+            "gridMobileMaxHeight": 910
+        }
+    },
+    "field_responsive": false,
+    "field_type": "dhq_image_radio_btn",
+    "field_values_addition_enabled_in_database_editor": true,
+    "field_values_source": "",
+    "field-option-opton": [
+        {
+            "name": "Personal Loan",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group_dHh6s.png",
+            "selected": true
+        },
+        {
+            "name": "Business Loan",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-9_jUWyM.png",
+            "selected": false
+        },
+        {
+            "name": "Gold Loan",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-5_ayUYH.png",
+            "selected": false
+        },
+        {
+            "name": "Home Loan",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-2_aFY8e.png",
+            "selected": false
+        },
+        {
+            "name": "Auto Loan",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-10_8EjPg.png",
+            "selected": false
+        },
+        {
+            "name": "LAP",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-6_uBdX1.png",
+            "selected": false
+        },
+        {
+            "name": "LAIP",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-8_nqnmA.png",
+            "selected": false
+        },
+        {
+            "name": "LAFD",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-4_c9iYJ.png",
+            "selected": false
+        },
+        {
+            "name": "LAMF",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-3_Vhe2L.png",
+            "selected": false
+        },
+        {
+            "name": "Education Loan ",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-1_CdqsE.png",
+            "selected": false
+        },
+        {
+            "name": "Vehicle Loan",
+            "image_url": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team1349/content/app/images/public/Mask group-7_bAPVL.png",
+            "selected": false
+        }
+    ],
+    "for_localization": {
+        "static_msgs": [
+            "This field is mandatory"
+        ],
+        "dynamic_msgs_keys": [
+            "label",
+            "tooltip",
+            "tip_description"
+        ],
+        "concated_msgs": []
+    },
+    "formbuilder_theme": "#bbbbbb",
+    "formula_property_list": {},
+    "grid_dynamic_height": true,
+    "grid_maintain_space": false,
+    "grid_max_height": "",
+    "grid_max_height_unit": "px",
+    "gridMobileOrigin": null,
+    "hidden": false,
+    "image_background_color": "var(--DHQ-neutral-bg-color)",
+    "image_fit": "contain",
+    "input_control_height": "40px",
+    "input_font_color": "#444444",
+    "input_font_size": "14px",
+    "input_font_weight": "400",
+    "input_placeholder_font_weight": "400",
+    "input_placeholder_text_color": "#bbbbbb",
+    "input_placeholder_text_size": "13px",
+    "is_master_control": false,
+    "is_outlet_control": false,
+    "is_repeat_outlet_control": false,
+    "is_variable": false,
+    "isDhqGridCtrl": true,
+    "isDhqHideOnDesktop": false,
+    "isDhqHideOnMobile": false,
+    "label": "Image Choice",
+    "label_font_size": "16",
+    "label_font_size_unit": "px",
+    "label_font_weight": "500",
+    "label_font_weight_class": "font-weight-normal",
+    "label_hidden": true,
+    "label_left_width": "33",
+    "label_left_width_unit": "%",
+    "label_position": "top",
+    "label_text_alignment": "left",
+    "label_text_color": "var(--theme-color-grey)",
+    "landscape_no_selection": "4",
+    "magnify": false,
+    "mobile_no_selection": "2",
+    "parent_id": "",
+    "property_mapped": {},
+    "property_value_mapped": {},
+    "required": false,
+    "select_type": "singleselect",
+    "selected_background_color": "var(--DHQ-primary-light-color)",
+    "selected_border_color": "var(--DHQ-primary-color)",
+    "selected_imgback_color": "var(--DHQ-primary-light-color)",
+    "show_description": false,
+    "show_dfm": false,
+    "show_new_property": false,
+    "show_tooltip": false,
+    "sid": "sc7693RxrJUlYDQv7b0MrUI",
+    "tabIndex": "",
+    "tablet_no_selection": "4",
+    "text_font_size": "12",
+    "text_font_size_unit": "px",
+    "text_font_weight": "600",
+    "text_style_font_size": "12",
+    "text_style_font_size_unit": "px",
+    "text_style_font_weight": "500",
+    "text_style_text_alignment": "center",
+    "text_style_text_color": "var(--DHQ-primary-font-color)",
+    "text_text_alignment": "center",
+    "text_text_color": "var(--DHQ-primary-color)",
+    "tip_description": "",
+    "tooltip": "",
+    "type": "input",
+    "unique_name_change": false,
+    "visibility": true,
+    "wrapper_content_alignment": "flex-start"
+}
