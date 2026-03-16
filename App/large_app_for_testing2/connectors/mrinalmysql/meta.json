@@ -1,0 +1,17 @@
+{
+    "cat_id": "15647",
+    "catName": "mrinalmysql",
+    "catDesc": "",
+    "catIcon": "./Images/dblogos/mysql.png",
+    "schemeType": "db_connector",
+    "cat_created_on": "03/13/2026 15:11:58",
+    "cat_modify_on": "03/13/2026 15:11:58",
+    "cat_created_by": "",
+    "isGlobal": false,
+    "isEditable": true,
+    "isCatPublic": false,
+    "cat_type": "mysql",
+    "permission": "1000",
+    "multistep_auth_steps": {},
+    "channel_id": "9948"
+}

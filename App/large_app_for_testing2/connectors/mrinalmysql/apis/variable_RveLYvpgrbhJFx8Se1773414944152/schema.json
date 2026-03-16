@@ -1,0 +1,72 @@
+{
+    "channel_id": 9948,
+    "category_id": 15647,
+    "sub_category_id": 86253,
+    "response": {
+        "success": "true",
+        "content": [],
+        "ContentType": "application/json; charset=utf-8",
+        "StatusCode": 200,
+        "StatusDescription": "OK"
+    },
+    "failure": {
+        "Header": [],
+        "StatusCode": 0,
+        "StatusDescription": "",
+        "content": "",
+        "success": false
+    },
+    "failureCondition": [],
+    "request": {
+        "method": "DB_QUERY",
+        "body": {
+            "raw": "DELETE FROM `OrderItems` WHERE `order_item_id` = {{order_item_id}};",
+            "variables": [
+                {
+                    "keyName": "order_item_id",
+                    "keyID": " ",
+                    "keyValue": "{{order_item_id}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                }
+            ],
+            "mode": "db_query",
+            "queryEditor": "sql"
+        },
+        "header": [],
+        "url": {
+            "raw": "",
+            "protocol": "",
+            "query": [],
+            "param": []
+        },
+        "account_id": "",
+        "description": "",
+        "remove_empty_keys": false,
+        "skip_uri_component_encoding": false,
+        "request_timeout": 0
+    },
+    "name": "variable_RveLYvpgrbhJFx8Se1773414944152",
+    "subCatDescription": null,
+    "proxy": false,
+    "bindable": true,
+    "preselectfields": [
+        {
+            "field_key": "body.order_item_id",
+            "field_name": "order_item_id",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        }
+    ],
+    "preselectvariables": [],
+    "plugin_id": 76595,
+    "instructions": null,
+    "includeBodyHash": false,
+    "cat_format_id": "faf2c878-1eee-11f1-b23a-0affd2bb4c4d",
+    "format_id": "83054123-1eef-11f1-b23a-0affd2bb4c4d",
+    "service_type": null,
+    "is_deleted": 0
+}

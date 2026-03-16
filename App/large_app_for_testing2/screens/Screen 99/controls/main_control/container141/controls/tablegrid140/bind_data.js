@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "file_name": "project_proposal.pdf",
+        "file_type": "PDF",
+        "size": "2.4MB",
+        "owner": "John Doe",
+        "uploaded_at": "2023-02-10T14:30:00Z",
+        "status": "Active",
+        "storage_path": "/documents/reports/",
+        "access_level": "Private",
+        "description": "Project proposal document"
+    },
+    {
+        "id": 2,
+        "file_name": "team_meeting.mp4",
+        "file_type": "Video",
+        "size": "50MB",
+        "owner": "Jane Smith",
+        "uploaded_at": "2023-03-01T10:15:00Z",
+        "status": "Active",
+        "storage_path": "/videos/meetings/",
+        "access_level": "Restricted",
+        "description": "Recorded team meeting"
+    },
+    {
+        "id": 3,
+        "file_name": "financial_report.xlsx",
+        "file_type": "Excel",
+        "size": "1.2MB",
+        "owner": "Michael Johnson",
+        "uploaded_at": "2023-01-22T09:00:00Z",
+        "status": "Archived",
+        "storage_path": "/documents/finance/",
+        "access_level": "Private",
+        "description": "Annual financial report"
+    },
+    {
+        "id": 4,
+        "file_name": "logo_design.png",
+        "file_type": "Image",
+        "size": "500KB",
+        "owner": "Emily Davis",
+        "uploaded_at": "2023-03-05T16:45:00Z",
+        "status": "Active",
+        "storage_path": "/images/logos/",
+        "access_level": "Public",
+        "description": "Company logo design"
+    },
+    {
+        "id": 5,
+        "file_name": "product_manual.docx",
+        "file_type": "Word",
+        "size": "3.1MB",
+        "owner": "David Brown",
+        "uploaded_at": "2023-02-14T11:20:00Z",
+        "status": "Active",
+        "storage_path": "/documents/manuals/",
+        "access_level": "Restricted",
+        "description": "User manual for product"
+    },
+    {
+        "id": 6,
+        "file_name": "server_backup.zip",
+        "file_type": "ZIP",
+        "size": "1.5GB",
+        "owner": "Sophia Wilson",
+        "uploaded_at": "2023-01-30T22:10:00Z",
+        "status": "Archived",
+        "storage_path": "/backups/servers/",
+        "access_level": "Private",
+        "description": "Monthly server backup"
+    },
+    {
+        "id": 7,
+        "file_name": "presentation_slides.pptx",
+        "file_type": "PowerPoint",
+        "size": "4MB",
+        "owner": "Liam Martinez",
+        "uploaded_at": "2023-03-08T13:35:00Z",
+        "status": "Active",
+        "storage_path": "/presentations/conferences/",
+        "access_level": "Restricted",
+        "description": "Conference presentation slides"
+    },
+    {
+        "id": 8,
+        "file_name": "client_contract.pdf",
+        "file_type": "PDF",
+        "size": "2.8MB",
+        "owner": "Olivia Thomas",
+        "uploaded_at": "2023-02-20T08:50:00Z",
+        "status": "Active",
+        "storage_path": "/contracts/clients/",
+        "access_level": "Private",
+        "description": "Signed contract with client"
+    },
+    {
+        "id": 9,
+        "file_name": "marketing_strategy.docx",
+        "file_type": "Word",
+        "size": "1.9MB",
+        "owner": "Noah Garcia",
+        "uploaded_at": "2023-01-18T17:25:00Z",
+        "status": "Archived",
+        "storage_path": "/documents/marketing/",
+        "access_level": "Restricted",
+        "description": "Marketing strategy document"
+    },
+    {
+        "id": 10,
+        "file_name": "team_roster.csv",
+        "file_type": "CSV",
+        "size": "600KB",
+        "owner": "Ava Hernandez",
+        "uploaded_at": "2023-03-12T12:40:00Z",
+        "status": "Active",
+        "storage_path": "/spreadsheets/teams/",
+        "access_level": "Public",
+        "description": "List of team members"
+    }
+]

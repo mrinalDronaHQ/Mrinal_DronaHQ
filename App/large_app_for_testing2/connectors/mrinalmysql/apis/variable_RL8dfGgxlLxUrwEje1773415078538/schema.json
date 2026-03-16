@@ -1,0 +1,168 @@
+{
+    "channel_id": 9948,
+    "category_id": 15647,
+    "sub_category_id": 86259,
+    "response": {
+        "success": "true",
+        "content": [],
+        "ContentType": "application/json; charset=utf-8",
+        "StatusCode": 200,
+        "StatusDescription": "OK"
+    },
+    "failure": {
+        "Header": [],
+        "StatusCode": 0,
+        "StatusDescription": "",
+        "content": "",
+        "success": false
+    },
+    "failureCondition": [],
+    "request": {
+        "method": "DB_QUERY",
+        "body": {
+            "raw": "INSERT INTO `Orders` ( `order_id`,`customer_id`,`order_date`,`status`,`total_amount`,`created_at`,`updated_at` ) VALUES ({{order_id}},{{customer_id}},'{{order_date}}','{{status}}',{{total_amount}},'{{created_at}}','{{updated_at}}');",
+            "variables": [
+                {
+                    "keyName": "order_id",
+                    "keyID": " ",
+                    "keyValue": "{{order_id}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "customer_id",
+                    "keyID": " ",
+                    "keyValue": "{{customer_id}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "order_date",
+                    "keyID": " ",
+                    "keyValue": "{{order_date}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "status",
+                    "keyID": " ",
+                    "keyValue": "{{status}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "total_amount",
+                    "keyID": " ",
+                    "keyValue": "{{total_amount}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "created_at",
+                    "keyID": " ",
+                    "keyValue": "{{created_at}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "updated_at",
+                    "keyID": " ",
+                    "keyValue": "{{updated_at}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                }
+            ],
+            "mode": "db_query",
+            "queryEditor": "sql"
+        },
+        "header": [],
+        "url": {
+            "raw": "",
+            "protocol": "",
+            "query": [],
+            "param": []
+        },
+        "account_id": "",
+        "description": "",
+        "remove_empty_keys": false,
+        "skip_uri_component_encoding": false,
+        "request_timeout": 0
+    },
+    "name": "variable_RL8dfGgxlLxUrwEje1773415078538",
+    "subCatDescription": null,
+    "proxy": false,
+    "bindable": true,
+    "preselectfields": [
+        {
+            "field_key": "body.order_id",
+            "field_name": "order_id",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.customer_id",
+            "field_name": "customer_id",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.order_date",
+            "field_name": "order_date",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.status",
+            "field_name": "status",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.total_amount",
+            "field_name": "total_amount",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.created_at",
+            "field_name": "created_at",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.updated_at",
+            "field_name": "updated_at",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        }
+    ],
+    "preselectvariables": [],
+    "plugin_id": 76595,
+    "instructions": null,
+    "includeBodyHash": false,
+    "cat_format_id": "faf2c878-1eee-11f1-b23a-0affd2bb4c4d",
+    "format_id": "d4157784-1eef-11f1-b23a-0affd2bb4c4d",
+    "service_type": null,
+    "is_deleted": 0
+}
