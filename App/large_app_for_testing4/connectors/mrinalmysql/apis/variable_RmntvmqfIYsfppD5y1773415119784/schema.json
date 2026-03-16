@@ -1,0 +1,89 @@
+{
+    "channel_id": 9948,
+    "category_id": 15647,
+    "sub_category_id": 86260,
+    "response": {
+        "success": true,
+        "content": {
+            "error": "string"
+        },
+        "StatusCode": 500,
+        "StatusDescription": "Internal Server Error"
+    },
+    "failure": {
+        "Header": [],
+        "StatusCode": 0,
+        "StatusDescription": "",
+        "content": "",
+        "success": false
+    },
+    "failureCondition": [],
+    "request": {
+        "method": "DB_QUERY",
+        "body": {
+            "raw": "SELECT `product_id`,`product_name`,`description`,`price`,`stock_quantity`,`created_at`,`updated_at` FROM `Products`  LIMIT {{tablegrid3.PROPERTIES.LIMIT}} OFFSET {{tablegrid3.PROPERTIES.OFFSET}};",
+            "variables": [
+                {
+                    "keyName": "tablegrid3.PROPERTIES.LIMIT",
+                    "keyID": "list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.LIMIT",
+                    "keyValue": "{{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.LIMIT}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                },
+                {
+                    "keyName": "tablegrid3.PROPERTIES.OFFSET",
+                    "keyID": "list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.OFFSET",
+                    "keyValue": "{{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.OFFSET}}",
+                    "keyType": "string",
+                    "keyIsDynamic": true
+                }
+            ],
+            "mode": "db_query",
+            "queryEditor": "sql"
+        },
+        "header": [],
+        "url": {
+            "raw": "",
+            "protocol": "",
+            "query": [],
+            "param": []
+        },
+        "account_id": "",
+        "description": "",
+        "remove_empty_keys": false,
+        "skip_uri_component_encoding": false,
+        "request_timeout": 0
+    },
+    "name": "variable_RmntvmqfIYsfppD5y1773415119784",
+    "subCatDescription": null,
+    "proxy": false,
+    "bindable": true,
+    "preselectfields": [
+        {
+            "field_key": "body.tablegrid3.PROPERTIES.LIMIT",
+            "field_name": "tablegrid3.PROPERTIES.LIMIT",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        },
+        {
+            "field_key": "body.tablegrid3.PROPERTIES.OFFSET",
+            "field_name": "tablegrid3.PROPERTIES.OFFSET",
+            "field_default_value": "",
+            "field_mandatory": false,
+            "field_hidden": false,
+            "helptext": "",
+            "preselect_formula": ""
+        }
+    ],
+    "preselectvariables": [],
+    "plugin_id": 76595,
+    "instructions": null,
+    "includeBodyHash": false,
+    "cat_format_id": "faf2c878-1eee-11f1-b23a-0affd2bb4c4d",
+    "format_id": "eb79f911-1eef-11f1-b23a-0affd2bb4c4d",
+    "service_type": null,
+    "is_deleted": 0
+}
