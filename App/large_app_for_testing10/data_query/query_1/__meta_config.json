@@ -1,0 +1,32 @@
+{
+    "HEADERS": {},
+    "RESPONSE_CODE": 200,
+    "RESPONSE_MESSAGE": "Ok",
+    "FAILURE_CODE": "",
+    "FAILURE_MESSAGE": "",
+    "TIMESTAMP": {
+        "request_arrival": 1773414883461,
+        "request_validation": 1773414883461,
+        "query_preparation": 1773414883514,
+        "query_execution": 1773414883514,
+        "post_processing": 1773414884942,
+        "response": 1773414884942,
+        "transfer_data_arrival": 1773414885246,
+        "dataquery_preparation_arrival": 1773414882867,
+        "transform_response_arrival": 1773414885269,
+        "binding_post_processing_arrival": 1773414885271
+    },
+    "DURATION": {
+        "turn_around": 1481,
+        "authentication": 0,
+        "validation": 53,
+        "preparation": 0,
+        "execution": 1428,
+        "processing": 0,
+        "transfer_data": 889,
+        "prepare_data_query": 9,
+        "transform_response": 1,
+        "post_processing": 2
+    },
+    "RESPONSE_SIZE": 987
+}

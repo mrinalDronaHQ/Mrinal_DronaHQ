@@ -1,0 +1,473 @@
+{
+    "event_name": "delete_click",
+    "selector": "[eventname = 'delete_click']",
+    "event_type": "click",
+    "actionflow_id": "af_list_c1068RZJChMBpoLpkzrTi3_delete_click_click",
+    "next_actions": [
+        "RPMfYiX2POQmPk4xF"
+    ],
+    "prev_actions": [],
+    "actions": [
+        {
+            "id": "RPMfYiX2POQmPk4xF",
+            "execution_editor_type": "JSEditor",
+            "execution_condition_variable_with_name": "",
+            "execution_condition_variable": "",
+            "execution_environments": [
+                "dev",
+                "beta",
+                "prod"
+            ],
+            "unique_name": "CONFIRMATION",
+            "label": "",
+            "wait_till_completion": true,
+            "fields": {
+                "confirmationTitle": {
+                    "key": "confirmationTitle",
+                    "value": "Are you sure?",
+                    "name": "Are you sure?",
+                    "label": "Title\n    Title",
+                    "isField": false,
+                    "isPreselect": false,
+                    "fieldValueType": "manual",
+                    "data_type": "string",
+                    "isDynamic": false,
+                    "editor_type": "JSEditor"
+                },
+                "confirmationMessage": {
+                    "key": "confirmationMessage",
+                    "value": "Do you want to delete this record?",
+                    "name": "Do you want to delete this record?",
+                    "label": "Message\n    Message",
+                    "isField": false,
+                    "isPreselect": false,
+                    "fieldValueType": "manual",
+                    "data_type": "string",
+                    "isDynamic": false,
+                    "editor_type": "JSEditor"
+                },
+                "confirmButtonText": {
+                    "key": "confirmButtonText",
+                    "value": "Delete",
+                    "name": "Delete",
+                    "label": "Confirm Button Text\n    Confirm Button Text",
+                    "isField": false,
+                    "isPreselect": false,
+                    "fieldValueType": "manual",
+                    "data_type": "string",
+                    "isDynamic": false,
+                    "editor_type": "JSEditor"
+                },
+                "cancelButtonText": {
+                    "key": "cancelButtonText",
+                    "value": "Cancel",
+                    "name": "Cancel",
+                    "label": "Cancel Button Text\n    Cancel Button Text",
+                    "isField": false,
+                    "isPreselect": false,
+                    "fieldValueType": "manual",
+                    "data_type": "string",
+                    "isDynamic": false,
+                    "editor_type": "JSEditor"
+                }
+            },
+            "type": "CONFIRM",
+            "outputs": [
+                {
+                    "key": "action",
+                    "value": "output.action",
+                    "isDefault": true
+                }
+            ],
+            "dual_output_action": true,
+            "actions_on_positive": [
+                {
+                    "id": "RnRGrm6C7majnixE9",
+                    "execution_editor_type": "JSEditor",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "execution_environments": [
+                        "dev",
+                        "beta",
+                        "prod"
+                    ],
+                    "unique_name": "transformDeleteRecords",
+                    "label": "",
+                    "wait_till_completion": true,
+                    "fields": {},
+                    "type": "JSCODE",
+                    "outputs": [
+                        {
+                            "key": "output",
+                            "value": "output",
+                            "select_first": false,
+                            "default_output": {
+                                "order_item_id": "",
+                                "order_id": "",
+                                "product_id": "",
+                                "quantity": "",
+                                "unit_price": "",
+                                "created_at": "",
+                                "updated_at": ""
+                            }
+                        }
+                    ],
+                    "dual_output_action": false,
+                    "jscode_params": {
+                        "dhq_variableList": [
+                            {
+                                "alias": "tablegrid",
+                                "name": "tablegrid1.PROPERTIES.SELECTEDROWS",
+                                "id": "list_c57RqjTuHIoMmvJ1mX52.PROPERTIES.SELECTEDROWS",
+                                "testValue": [
+                                    {
+                                        "order_item_id": "",
+                                        "order_id": "",
+                                        "product_id": "",
+                                        "quantity": "",
+                                        "unit_price": "",
+                                        "created_at": "",
+                                        "updated_at": ""
+                                    }
+                                ],
+                                "testValueType": {}
+                            }
+                        ],
+                        "dhq_processingCode": "\toutput=tablegrid[0]\n"
+                    },
+                    "next_actions": [
+                        "RNch5ATflavlvllPu"
+                    ],
+                    "prev_actions": [
+                        "RPMfYiX2POQmPk4xF"
+                    ]
+                },
+                {
+                    "id": "RNch5ATflavlvllPu",
+                    "execution_editor_type": "JSEditor",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "execution_environments": [
+                        "dev",
+                        "beta",
+                        "prod"
+                    ],
+                    "unique_name": "mrinalmysql_delete",
+                    "label": "",
+                    "wait_till_completion": true,
+                    "offline_submission": false,
+                    "downloadas_file": false,
+                    "fields": {
+                        "name": {
+                            "key": "name",
+                            "value": "variable_RveLYvpgrbhJFx8Se1773414944152",
+                            "name": "query_8",
+                            "label": "Select Data Query\n   Select Data Query",
+                            "isField": false,
+                            "isPreselect": false,
+                            "fieldValueType": "manual",
+                            "data_type": "text",
+                            "isDynamic": false,
+                            "editor_type": "",
+                            "evaluateValue": true
+                        },
+                        "custom_parameters": {
+                            "key": "custom_parameters",
+                            "value": "{{RnRGrm6C7majnixE9.output}}",
+                            "name": "{{transformDeleteRecords.output}}",
+                            "label": "Custom parameters\n    Custom parameters",
+                            "isField": false,
+                            "isPreselect": false,
+                            "fieldValueType": "manual",
+                            "data_type": "object",
+                            "isDynamic": false,
+                            "editor_type": "JSEditor",
+                            "evaluateValue": true
+                        }
+                    },
+                    "type": "TRIGGERDATAQUERY",
+                    "outputs": [
+                        {
+                            "key": "output",
+                            "value": "output",
+                            "isDefault": true
+                        }
+                    ],
+                    "dual_output_action": true,
+                    "actions_on_positive": [
+                        {
+                            "id": "RhOelYLoN2OXB3C5g",
+                            "execution_editor_type": "JSEditor",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "Success_toast",
+                            "label": "",
+                            "wait_till_completion": true,
+                            "fields": {
+                                "type": {
+                                    "key": "type",
+                                    "value": "success",
+                                    "name": "Success",
+                                    "label": "Type\n   Type",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                },
+                                "title": {
+                                    "key": "title",
+                                    "value": "Perfect!",
+                                    "name": "Perfect!",
+                                    "label": "Title\n    Title",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": "JSEditor"
+                                },
+                                "message": {
+                                    "key": "message",
+                                    "value": "Row Deleted Successfully",
+                                    "name": "Row Deleted Successfully",
+                                    "label": "Message\n    Message",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": "JSEditor"
+                                },
+                                "position": {
+                                    "key": "position",
+                                    "value": "toast-top-right",
+                                    "name": "Top Right",
+                                    "label": "Position On Screen\n   Position On Screen",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                },
+                                "closeButton": {
+                                    "key": "closeButton",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Show Close Button",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                },
+                                "timeout": {
+                                    "key": "timeout",
+                                    "value": "5000",
+                                    "name": "",
+                                    "label": "Close After (in milliseconds)\n    Close After (in milliseconds)",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "number",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                }
+                            },
+                            "type": "TOAST",
+                            "outputs": [],
+                            "dual_output_action": false,
+                            "next_actions": [
+                                "Rpmk0PwQdckKwK5bF"
+                            ],
+                            "prev_actions": [
+                                "RNch5ATflavlvllPu"
+                            ]
+                        },
+                        {
+                            "id": "Rpmk0PwQdckKwK5bF",
+                            "execution_editor_type": "JSEditor",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "Refresh_delete",
+                            "label": "",
+                            "wait_till_completion": false,
+                            "fields": {
+                                "dhqCtrlIds": {
+                                    "key": "dhqCtrlIds",
+                                    "value": [
+                                        "list_c57RqjTuHIoMmvJ1mX52"
+                                    ],
+                                    "name": [
+                                        "tablegrid1"
+                                    ],
+                                    "label": "Enter Control name\n  Enter Control name",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "string",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                },
+                                "triggerDependentDataQuery": {
+                                    "key": "triggerDependentDataQuery",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Trigger Dependent Data Query",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                },
+                                "tableGridPagination": {
+                                    "key": "tableGridPagination",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Maintain Pagination",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                }
+                            },
+                            "type": "REFRESHCTRLDATA",
+                            "outputs": [],
+                            "dual_output_action": false,
+                            "next_actions": [],
+                            "prev_actions": [
+                                "RhOelYLoN2OXB3C5g"
+                            ]
+                        }
+                    ],
+                    "actions_on_negative": [
+                        {
+                            "id": "RzeOPy4UYiirVHGv7",
+                            "execution_editor_type": "Excel",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "Error_Toast",
+                            "label": "",
+                            "wait_till_completion": true,
+                            "fields": {
+                                "type": {
+                                    "key": "type",
+                                    "value": "error",
+                                    "name": "error",
+                                    "label": "Type\n   Type",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                },
+                                "title": {
+                                    "key": "title",
+                                    "value": "Error!",
+                                    "name": "Error!",
+                                    "label": "Title\n    Title",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": "JSEditor"
+                                },
+                                "message": {
+                                    "key": "message",
+                                    "value": "Some Error Occured",
+                                    "name": "Some Error Occured",
+                                    "label": "Message\n    Message",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": "JSEditor"
+                                },
+                                "position": {
+                                    "key": "position",
+                                    "value": "toast-top-right",
+                                    "name": "Top Right",
+                                    "label": "Position On Screen\n   Position On Screen",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                },
+                                "closeButton": {
+                                    "key": "closeButton",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Show Close Button",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                },
+                                "timeout": {
+                                    "key": "timeout",
+                                    "value": "5000",
+                                    "name": "",
+                                    "label": "Close After (in milliseconds)\n    Close After (in milliseconds)",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "number",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                }
+                            },
+                            "type": "TOAST",
+                            "outputs": [],
+                            "dual_output_action": false,
+                            "next_actions": [],
+                            "prev_actions": [
+                                "RNch5ATflavlvllPu"
+                            ]
+                        }
+                    ],
+                    "next_actions": [],
+                    "prev_actions": [
+                        "RnRGrm6C7majnixE9"
+                    ]
+                }
+            ],
+            "actions_on_negative": [],
+            "next_actions": [],
+            "prev_actions": []
+        }
+    ],
+    "category": "",
+    "interval": "",
+    "action_label": ""
+}
