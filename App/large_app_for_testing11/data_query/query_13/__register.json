@@ -1,0 +1,72 @@
+{
+    "api_id": 13,
+    "api_name": "variable_RmntvmqfIYsfppD5y1773415119784",
+    "cat_id": "__REPLACE_CAT_ID_15647___",
+    "cat_name": "__REPLACE_CAT_NAME_15647___",
+    "sub_cat_id": "__REPLACE_SUB_CAT_ID_86260___",
+    "sub_cat_name": "__REPLACE_SUB_CAT_NAME_86260___",
+    "cat_icon_url": "./Images/dblogos/mysql.png",
+    "method": "db_query",
+    "query": {},
+    "param": {},
+    "header": {},
+    "body": {
+        "mode": "db_query",
+        "formdata": {},
+        "variables": {
+            "tablegrid3.PROPERTIES.LIMIT": {
+                "editor_type": "JSEditor",
+                "isDynamic": false,
+                "isField": true,
+                "keyName": "tablegrid3.PROPERTIES.LIMIT",
+                "keyID": "list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.LIMIT",
+                "keyNameMappping": [],
+                "keyType": "text",
+                "keyValue": "{{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.LIMIT}}",
+                "label": "",
+                "name": "",
+                "preselect": false,
+                "testValue": "100"
+            },
+            "tablegrid3.PROPERTIES.OFFSET": {
+                "editor_type": "JSEditor",
+                "isDynamic": false,
+                "isField": true,
+                "keyName": "tablegrid3.PROPERTIES.OFFSET",
+                "keyID": "list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.OFFSET",
+                "keyNameMappping": [],
+                "keyType": "text",
+                "keyValue": "{{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.OFFSET}}",
+                "label": "",
+                "name": "",
+                "preselect": false,
+                "testValue": "0"
+            }
+        }
+    },
+    "auth": {},
+    "triggerOnPageload": false,
+    "execution_editor_type": "JSEditor",
+    "execution_condition_variable_with_name": "",
+    "execution_condition_variable": "",
+    "scheme_type": "db_connector",
+    "account_id": "account_9376664_1773414718723",
+    "filterObjectMapping": [],
+    "sanitizeResponseFlag": false,
+    "rawResponse": {
+        "error": "You have an error in your SQL syntax; check the manual that corresponds to your TiDB version for the right syntax to use line 1 column 124 near \"{{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.LIMIT}} OFFSET {{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.OFFSET}} ;\" "
+    },
+    "processedResp": {
+        "error": "You have an error in your SQL syntax; check the manual that corresponds to your TiDB version for the right syntax to use line 1 column 124 near \"{{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.LIMIT}} OFFSET {{list_c140R4MDtpfQ9EWTLtPAk.PROPERTIES.OFFSET}} ;\" "
+    },
+    "paginationType": "none",
+    "offsetKeyPath": "",
+    "hasMoreKeyPath": "",
+    "misc": {},
+    "additionalKeywords": {},
+    "formatedSchema": {},
+    "bindedTo": "variable",
+    "createdVia": "variable",
+    "autoTransform": false,
+    "cat_type": "mysql"
+}
