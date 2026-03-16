@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "customer": "John Doe",
+        "pickup_location": "123 Main St, New York, NY",
+        "dropoff_location": "456 Park Ave, New York, NY",
+        "distance": "5.2 miles",
+        "vehicle_type": "Sedan",
+        "driver": "Mike Johnson",
+        "status": "En Route",
+        "estimated_time": "12 mins",
+        "fare": "$15.50"
+    },
+    {
+        "id": 2,
+        "customer": "Jane Smith",
+        "pickup_location": "789 Broadway, New York, NY",
+        "dropoff_location": "101 5th Ave, New York, NY",
+        "distance": "3.8 miles",
+        "vehicle_type": "SUV",
+        "driver": "Sarah Lee",
+        "status": "Completed",
+        "estimated_time": "10 mins",
+        "fare": "$18.00"
+    },
+    {
+        "id": 3,
+        "customer": "Michael Johnson",
+        "pickup_location": "55 Wall St, New York, NY",
+        "dropoff_location": "200 Madison Ave, New York, NY",
+        "distance": "6.5 miles",
+        "vehicle_type": "Van",
+        "driver": "Tom Wilson",
+        "status": "Pending",
+        "estimated_time": "15 mins",
+        "fare": "$22.75"
+    },
+    {
+        "id": 4,
+        "customer": "Emily Davis",
+        "pickup_location": "500 Lexington Ave, New York, NY",
+        "dropoff_location": "30 Rockefeller Plaza, New York, NY",
+        "distance": "2.3 miles",
+        "vehicle_type": "Bike",
+        "driver": "Alex Brown",
+        "status": "On Hold",
+        "estimated_time": "8 mins",
+        "fare": "$10.00"
+    },
+    {
+        "id": 5,
+        "customer": "David Brown",
+        "pickup_location": "25 Hudson Yards, New York, NY",
+        "dropoff_location": "90 West St, New York, NY",
+        "distance": "4.1 miles",
+        "vehicle_type": "Sedan",
+        "driver": "Chris Green",
+        "status": "En Route",
+        "estimated_time": "11 mins",
+        "fare": "$16.25"
+    },
+    {
+        "id": 6,
+        "customer": "Sophia Wilson",
+        "pickup_location": "15 Columbus Circle, New York, NY",
+        "dropoff_location": "500 Broadway, New York, NY",
+        "distance": "3.0 miles",
+        "vehicle_type": "SUV",
+        "driver": "Jessica White",
+        "status": "Completed",
+        "estimated_time": "9 mins",
+        "fare": "$17.50"
+    },
+    {
+        "id": 7,
+        "customer": "Liam Martinez",
+        "pickup_location": "88 7th Ave, New York, NY",
+        "dropoff_location": "300 Grand St, New York, NY",
+        "distance": "7.2 miles",
+        "vehicle_type": "Van",
+        "driver": "Robert Adams",
+        "status": "Pending",
+        "estimated_time": "18 mins",
+        "fare": "$25.00"
+    },
+    {
+        "id": 8,
+        "customer": "Olivia Thomas",
+        "pickup_location": "40 Wall St, New York, NY",
+        "dropoff_location": "120 8th Ave, New York, NY",
+        "distance": "5.7 miles",
+        "vehicle_type": "Bike",
+        "driver": "Nathan Clark",
+        "status": "On Hold",
+        "estimated_time": "14 mins",
+        "fare": "$12.50"
+    },
+    {
+        "id": 9,
+        "customer": "Noah Garcia",
+        "pickup_location": "175 Broadway, New York, NY",
+        "dropoff_location": "500 10th Ave, New York, NY",
+        "distance": "6.0 miles",
+        "vehicle_type": "Sedan",
+        "driver": "Emma King",
+        "status": "En Route",
+        "estimated_time": "13 mins",
+        "fare": "$19.75"
+    },
+    {
+        "id": 10,
+        "customer": "Ava Hernandez",
+        "pickup_location": "99 Fulton St, New York, NY",
+        "dropoff_location": "250 3rd Ave, New York, NY",
+        "distance": "4.4 miles",
+        "vehicle_type": "SUV",
+        "driver": "William Scott",
+        "status": "Completed",
+        "estimated_time": "10 mins",
+        "fare": "$20.00"
+    }
+]
