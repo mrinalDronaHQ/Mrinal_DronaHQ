@@ -1,0 +1,971 @@
+{
+    "event_name": "save_changes",
+    "selector": "[eventname = 'save_changes']",
+    "event_type": "click",
+    "actionflow_id": "af_list_c2483RRiLKRo7dJ5CdGhdI_save_changes_click",
+    "next_actions": [
+        "RHTPq0vHmKk4wCuK9"
+    ],
+    "prev_actions": [],
+    "actions": [
+        {
+            "type": "CONDITIONALBRANCH",
+            "name": "CONDITIONALBRANCH",
+            "id": "RHTPq0vHmKk4wCuK9",
+            "branches": [
+                {
+                    "id": "R4XQGS5Ts81DUqwGn",
+                    "branch_name": "Insert_New_Rows",
+                    "branch_condition": "{{list_c34RgYL3bknztjriJ8vq.PROPERTIES.NEWROWS}}",
+                    "editor_type": "JSEditor",
+                    "branch_condition_name": "{{tablegrid.PROPERTIES.NEWROWS}}",
+                    "actions": [
+                        {
+                            "id": "RGnyGKorbTyoqjKmI",
+                            "execution_editor_type": "JSEditor",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "ITERATETASKSINSERT",
+                            "label": "",
+                            "wait_till_completion": true,
+                            "offline_submission": false,
+                            "downloadas_file": false,
+                            "fields": {
+                                "ctrlData": {
+                                    "key": "ctrlData",
+                                    "value": "list_c34RgYL3bknztjriJ8vq.PROPERTIES.NEWROWS",
+                                    "name": "tablegrid.PROPERTIES.NEWROWS",
+                                    "label": "Enter Count/Array or control with Count/Array\n    Enter Count/Array or control with Count/Array",
+                                    "isField": true,
+                                    "isPreselect": false,
+                                    "fieldValueType": "field",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                }
+                            },
+                            "type": "ITERATETASKS",
+                            "outputs": [
+                                {
+                                    "key": "INDEX",
+                                    "value": "INDEX",
+                                    "default_output": 1,
+                                    "select_first": false
+                                },
+                                {
+                                    "key": "VALUE",
+                                    "value": "VALUE",
+                                    "select_first": false,
+                                    "default_output": {
+                                        "customer_id": "",
+                                        "first_name": "",
+                                        "last_name": "",
+                                        "email": "",
+                                        "phone": "",
+                                        "created_at": "",
+                                        "updated_at": ""
+                                    }
+                                }
+                            ],
+                            "dual_output_action": false,
+                            "next_actions": [
+                                "Ry4EWY9LJfQzxWaFU"
+                            ],
+                            "prev_actions": [
+                                "RHTPq0vHmKk4wCuK9"
+                            ],
+                            "actions": [
+                                {
+                                    "id": "REjgNwahcmjhXDhvR",
+                                    "execution_editor_type": "JSEditor",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "execution_environments": [
+                                        "dev",
+                                        "beta",
+                                        "prod"
+                                    ],
+                                    "unique_name": "transformInsertRecords",
+                                    "label": "",
+                                    "wait_till_completion": true,
+                                    "offline_submission": false,
+                                    "downloadas_file": false,
+                                    "fields": {},
+                                    "type": "JSCODE",
+                                    "outputs": [
+                                        {
+                                            "key": "records",
+                                            "value": "output",
+                                            "select_first": false,
+                                            "default_output": {
+                                                "customer_id": "",
+                                                "first_name": "",
+                                                "last_name": "",
+                                                "email": "",
+                                                "phone": "",
+                                                "created_at": "",
+                                                "updated_at": ""
+                                            }
+                                        }
+                                    ],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [
+                                            {
+                                                "alias": "val",
+                                                "name": "ITERATETASKSINSERT.VALUE",
+                                                "id": "RGnyGKorbTyoqjKmI.VALUE",
+                                                "testValue": {
+                                                    "customer_id": "",
+                                                    "first_name": "",
+                                                    "last_name": "",
+                                                    "email": "",
+                                                    "phone": "",
+                                                    "created_at": "",
+                                                    "updated_at": ""
+                                                },
+                                                "testValueType": {}
+                                            }
+                                        ],
+                                        "dhq_processingCode": "  output = {\n    \"customer_id\" : val[\"customer_id\"] || null,\n    \"first_name\" : val[\"first_name\"] || null,\n    \"last_name\" : val[\"last_name\"] || null,\n    \"email\" : val[\"email\"] || null,\n    \"phone\" : val[\"phone\"] || null,\n    \"created_at\" : val[\"created_at\"] || null,\n    \"updated_at\" : val[\"updated_at\"] || null\n  };\n"
+                                    },
+                                    "next_actions": [
+                                        "R6YCOKsHmi3X75gwO"
+                                    ],
+                                    "prev_actions": [
+                                        "RGnyGKorbTyoqjKmI"
+                                    ]
+                                },
+                                {
+                                    "id": "R6YCOKsHmi3X75gwO",
+                                    "execution_editor_type": "JSEditor",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "execution_environments": [
+                                        "dev",
+                                        "beta",
+                                        "prod"
+                                    ],
+                                    "unique_name": "mrinalmysql_insert",
+                                    "label": "",
+                                    "wait_till_completion": true,
+                                    "offline_submission": false,
+                                    "downloadas_file": false,
+                                    "fields": {
+                                        "name": {
+                                            "key": "name",
+                                            "value": "variable_RaYJlmNd2DrX8vLdo1773414881796",
+                                            "name": "query_2",
+                                            "label": "Select Data Query\n   Select Data Query",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "text",
+                                            "isDynamic": false,
+                                            "editor_type": "",
+                                            "evaluateValue": true
+                                        },
+                                        "custom_parameters": {
+                                            "key": "custom_parameters",
+                                            "value": "{{REjgNwahcmjhXDhvR.records}}",
+                                            "name": "{{transformInsertRecords.records}}",
+                                            "label": "Custom parameters\n    Custom parameters",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "object",
+                                            "isDynamic": false,
+                                            "editor_type": "JSEditor",
+                                            "evaluateValue": true
+                                        }
+                                    },
+                                    "type": "TRIGGERDATAQUERY",
+                                    "outputs": [
+                                        {
+                                            "key": "output",
+                                            "value": "output",
+                                            "isDefault": true
+                                        }
+                                    ],
+                                    "dual_output_action": true,
+                                    "actions_on_positive": [
+                                        {
+                                            "id": "RSmRrP7u9nAhZ6kXe",
+                                            "execution_editor_type": "JSEditor",
+                                            "execution_condition_variable_with_name": "",
+                                            "execution_condition_variable": "",
+                                            "execution_environments": [
+                                                "dev",
+                                                "beta",
+                                                "prod"
+                                            ],
+                                            "unique_name": "InsertSuccessToast",
+                                            "label": "",
+                                            "wait_till_completion": true,
+                                            "fields": {
+                                                "type": {
+                                                    "key": "type",
+                                                    "value": "success",
+                                                    "name": "Success",
+                                                    "label": "Type\n   Type",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "title": {
+                                                    "key": "title",
+                                                    "value": "Perfect!",
+                                                    "name": "Perfect!",
+                                                    "label": "Title\n    Title",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "message": {
+                                                    "key": "message",
+                                                    "value": "Records inserted successfully",
+                                                    "name": "Records inserted successfully ",
+                                                    "label": "Message\n    Message",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "position": {
+                                                    "key": "position",
+                                                    "value": "toast-top-right",
+                                                    "name": "Top Right",
+                                                    "label": "Position On Screen\n   Position On Screen",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "closeButton": {
+                                                    "key": "closeButton",
+                                                    "value": true,
+                                                    "name": "",
+                                                    "label": "Show Close Button",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "boolean",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "timeout": {
+                                                    "key": "timeout",
+                                                    "value": "5000",
+                                                    "name": "",
+                                                    "label": "Close After (in milliseconds)\n    Close After (in milliseconds)",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "number",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                }
+                                            },
+                                            "type": "TOAST",
+                                            "outputs": [],
+                                            "dual_output_action": false,
+                                            "next_actions": [
+                                                "Ry4EWY9LJfQzxWaFU"
+                                            ],
+                                            "prev_actions": [
+                                                "R6YCOKsHmi3X75gwO"
+                                            ]
+                                        }
+                                    ],
+                                    "actions_on_negative": [
+                                        {
+                                            "id": "RlhtEe3OCUPB1R1YP",
+                                            "execution_editor_type": "JSEditor",
+                                            "execution_condition_variable_with_name": "",
+                                            "execution_condition_variable": "",
+                                            "execution_environments": [
+                                                "dev",
+                                                "beta",
+                                                "prod"
+                                            ],
+                                            "unique_name": "Insert_error_toast",
+                                            "label": "",
+                                            "wait_till_completion": true,
+                                            "fields": {
+                                                "type": {
+                                                    "key": "type",
+                                                    "value": "error",
+                                                    "name": "error",
+                                                    "label": "Type\n   Type",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "title": {
+                                                    "key": "title",
+                                                    "value": "Error!",
+                                                    "name": "Error!",
+                                                    "label": "Title\n    Title",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "message": {
+                                                    "key": "message",
+                                                    "value": "Some Error Occured",
+                                                    "name": "Some Error Occured",
+                                                    "label": "Message\n    Message",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "position": {
+                                                    "key": "position",
+                                                    "value": "toast-top-right",
+                                                    "name": "Top Right",
+                                                    "label": "Position On Screen\n   Position On Screen",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "closeButton": {
+                                                    "key": "closeButton",
+                                                    "value": true,
+                                                    "name": "",
+                                                    "label": "Show Close Button",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "boolean",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "timeout": {
+                                                    "key": "timeout",
+                                                    "value": "5000",
+                                                    "name": "",
+                                                    "label": "Close After (in milliseconds)\n    Close After (in milliseconds)",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "number",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                }
+                                            },
+                                            "type": "TOAST",
+                                            "outputs": [],
+                                            "dual_output_action": false,
+                                            "next_actions": [
+                                                "end_iterate_task"
+                                            ],
+                                            "prev_actions": [
+                                                "R6YCOKsHmi3X75gwO"
+                                            ]
+                                        }
+                                    ],
+                                    "next_actions": [
+                                        "end_iterate_task"
+                                    ],
+                                    "prev_actions": [
+                                        "REjgNwahcmjhXDhvR"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Ry4EWY9LJfQzxWaFU",
+                            "execution_editor_type": "JSEditor",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "Refresh_insert",
+                            "label": "",
+                            "wait_till_completion": false,
+                            "fields": {
+                                "dhqCtrlIds": {
+                                    "key": "dhqCtrlIds",
+                                    "value": [
+                                        "list_c34RgYL3bknztjriJ8vq"
+                                    ],
+                                    "name": [
+                                        "tablegrid"
+                                    ],
+                                    "label": "Enter Control name\n  Enter Control name",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "string",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                },
+                                "triggerDependentDataQuery": {
+                                    "key": "triggerDependentDataQuery",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Trigger Dependent Data Query",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                },
+                                "tableGridPagination": {
+                                    "key": "tableGridPagination",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Maintain Pagination",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                }
+                            },
+                            "type": "REFRESHCTRLDATA",
+                            "outputs": [],
+                            "dual_output_action": false,
+                            "next_actions": [],
+                            "prev_actions": [
+                                "RGnyGKorbTyoqjKmI"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "REWwBkV4PfIIGYffH",
+                    "branch_name": "Update_Rows",
+                    "branch_condition": "{{list_c34RgYL3bknztjriJ8vq.PROPERTIES.EDITEDROWS}}",
+                    "editor_type": "JSEditor",
+                    "branch_condition_name": "{{tablegrid.PROPERTIES.EDITEDROWS}}",
+                    "actions": [
+                        {
+                            "id": "RiZ1D4bdl6oAt36ig",
+                            "execution_editor_type": "JSEditor",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "ITERATETASKS",
+                            "label": "",
+                            "wait_till_completion": true,
+                            "fields": {
+                                "ctrlData": {
+                                    "key": "ctrlData",
+                                    "value": "list_c34RgYL3bknztjriJ8vq.PROPERTIES.EDITEDROWS",
+                                    "name": "tablegrid.PROPERTIES.EDITEDROWS",
+                                    "label": "Enter Count/Array or control with Count/Array\n    Enter Count/Array or control with Count/Array",
+                                    "isField": true,
+                                    "isPreselect": false,
+                                    "fieldValueType": "field",
+                                    "data_type": "text",
+                                    "isDynamic": false,
+                                    "editor_type": ""
+                                }
+                            },
+                            "type": "ITERATETASKS",
+                            "outputs": [
+                                {
+                                    "key": "INDEX",
+                                    "value": "INDEX",
+                                    "select_first": false
+                                },
+                                {
+                                    "key": "VALUE",
+                                    "value": "VALUE",
+                                    "select_first": false
+                                }
+                            ],
+                            "dual_output_action": false,
+                            "next_actions": [
+                                "RfEQaUqKSLppw34Ct"
+                            ],
+                            "prev_actions": [
+                                "RHTPq0vHmKk4wCuK9"
+                            ],
+                            "actions": [
+                                {
+                                    "id": "RvSXsfnWAEhC4PEhZ",
+                                    "execution_editor_type": "JSEditor",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "execution_environments": [
+                                        "dev",
+                                        "beta",
+                                        "prod"
+                                    ],
+                                    "unique_name": "transFormUpdateRecord",
+                                    "label": "",
+                                    "wait_till_completion": true,
+                                    "fields": {},
+                                    "type": "JSCODE",
+                                    "outputs": [
+                                        {
+                                            "key": "updated_at",
+                                            "value": "output.updated_at",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "created_at",
+                                            "value": "output.created_at",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "phone",
+                                            "value": "output.phone",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "email",
+                                            "value": "output.email",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "last_name",
+                                            "value": "output.last_name",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "first_name",
+                                            "value": "output.first_name",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "customer_id",
+                                            "value": "output.customer_id",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "output",
+                                            "value": "output",
+                                            "select_first": false,
+                                            "default_output": {
+                                                "updated_at": "",
+                                                "created_at": "",
+                                                "phone": "",
+                                                "email": "",
+                                                "last_name": "",
+                                                "first_name": "",
+                                                "customer_id": ""
+                                            }
+                                        }
+                                    ],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [
+                                            {
+                                                "alias": "val",
+                                                "name": "ITERATETASKS.VALUE",
+                                                "id": "RiZ1D4bdl6oAt36ig.VALUE",
+                                                "testValue": {
+                                                    "updated_at": "",
+                                                    "created_at": "",
+                                                    "phone": "",
+                                                    "email": "",
+                                                    "last_name": "",
+                                                    "first_name": "",
+                                                    "customer_id": ""
+                                                },
+                                                "testValueType": {}
+                                            }
+                                        ],
+                                        "dhq_processingCode": "  output = {\n    \"updated_at\" : val[\"updated_at\"],\n    \"created_at\" : val[\"created_at\"],\n    \"phone\" : val[\"phone\"],\n    \"email\" : val[\"email\"],\n    \"last_name\" : val[\"last_name\"],\n    \"first_name\" : val[\"first_name\"],\n    \"customer_id\" : val[\"customer_id\"]\n  };\n"
+                                    },
+                                    "next_actions": [
+                                        "RpVA9i9wGC9CROPo5"
+                                    ],
+                                    "prev_actions": [
+                                        "RiZ1D4bdl6oAt36ig"
+                                    ]
+                                },
+                                {
+                                    "id": "RpVA9i9wGC9CROPo5",
+                                    "execution_editor_type": "JSEditor",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "execution_environments": [
+                                        "dev",
+                                        "beta",
+                                        "prod"
+                                    ],
+                                    "unique_name": "mrinalmysql_update",
+                                    "label": "",
+                                    "wait_till_completion": true,
+                                    "offline_submission": false,
+                                    "downloadas_file": false,
+                                    "fields": {
+                                        "name": {
+                                            "key": "name",
+                                            "value": "variable_RuA11CeY6oLCSpHtG1773414881802",
+                                            "name": "variable_RuA11CeY6oLCSpHtG1773414881802",
+                                            "label": "Select Data Query\n   Select Data Query",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "text",
+                                            "isDynamic": false,
+                                            "editor_type": "",
+                                            "evaluateValue": true
+                                        },
+                                        "custom_parameters": {
+                                            "key": "custom_parameters",
+                                            "value": "{{RvSXsfnWAEhC4PEhZ.output}}",
+                                            "name": "{{transFormUpdateRecord.output}}",
+                                            "label": "Custom parameters\n    Custom parameters",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "object",
+                                            "isDynamic": false,
+                                            "editor_type": "JSEditor",
+                                            "evaluateValue": true
+                                        }
+                                    },
+                                    "type": "TRIGGERDATAQUERY",
+                                    "outputs": [
+                                        {
+                                            "key": "output",
+                                            "value": "output",
+                                            "isDefault": true
+                                        }
+                                    ],
+                                    "dual_output_action": true,
+                                    "actions_on_positive": [
+                                        {
+                                            "id": "Rj6gRqoi13KMQi8UD",
+                                            "execution_editor_type": "JSEditor",
+                                            "execution_condition_variable_with_name": "",
+                                            "execution_condition_variable": "",
+                                            "execution_environments": [
+                                                "dev",
+                                                "beta",
+                                                "prod"
+                                            ],
+                                            "unique_name": "Update_Success",
+                                            "label": "",
+                                            "wait_till_completion": true,
+                                            "fields": {
+                                                "type": {
+                                                    "key": "type",
+                                                    "value": "success",
+                                                    "name": "Success",
+                                                    "label": "Type\n   Type",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "title": {
+                                                    "key": "title",
+                                                    "value": "Perfect!",
+                                                    "name": "Perfect!",
+                                                    "label": "Title\n    Title",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "message": {
+                                                    "key": "message",
+                                                    "name": "Successfully updated customer_id = {{transFormUpdateRecord.customer_id}}",
+                                                    "value": "Successfully updated customer_id = {{RvSXsfnWAEhC4PEhZ.customer_id}}",
+                                                    "label": "Message\n    Message",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "position": {
+                                                    "key": "position",
+                                                    "value": "toast-top-right",
+                                                    "name": "Top Right",
+                                                    "label": "Position On Screen\n   Position On Screen",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "closeButton": {
+                                                    "key": "closeButton",
+                                                    "value": true,
+                                                    "name": "",
+                                                    "label": "Show Close Button",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "boolean",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "timeout": {
+                                                    "key": "timeout",
+                                                    "value": "5000",
+                                                    "name": "",
+                                                    "label": "Close After (in milliseconds)\n    Close After (in milliseconds)",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "number",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                }
+                                            },
+                                            "type": "TOAST",
+                                            "outputs": [],
+                                            "dual_output_action": false,
+                                            "next_actions": [
+                                                "end_iterate_task"
+                                            ],
+                                            "prev_actions": [
+                                                "RpVA9i9wGC9CROPo5"
+                                            ]
+                                        }
+                                    ],
+                                    "actions_on_negative": [
+                                        {
+                                            "id": "R5Fxg0yb0Nt6vl7gU",
+                                            "execution_editor_type": "JSEditor",
+                                            "execution_condition_variable_with_name": "",
+                                            "execution_condition_variable": "",
+                                            "execution_environments": [
+                                                "dev",
+                                                "beta",
+                                                "prod"
+                                            ],
+                                            "unique_name": "Update_Error",
+                                            "label": "",
+                                            "wait_till_completion": true,
+                                            "fields": {
+                                                "type": {
+                                                    "key": "type",
+                                                    "value": "error",
+                                                    "name": "error",
+                                                    "label": "Type\n   Type",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "title": {
+                                                    "key": "title",
+                                                    "value": "Error!",
+                                                    "name": "Error!",
+                                                    "label": "Title\n    Title",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "message": {
+                                                    "key": "message",
+                                                    "name": "Error in updating customer_id = {{transFormUpdateRecord.customer_id}}",
+                                                    "value": "Error in updating {{RvSXsfnWAEhC4PEhZ.customer_id}}",
+                                                    "label": "Message\n    Message",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": "JSEditor"
+                                                },
+                                                "position": {
+                                                    "key": "position",
+                                                    "value": "toast-top-right",
+                                                    "name": "Top Right",
+                                                    "label": "Position On Screen\n   Position On Screen",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "text",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "closeButton": {
+                                                    "key": "closeButton",
+                                                    "value": true,
+                                                    "name": "",
+                                                    "label": "Show Close Button",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "boolean",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                },
+                                                "timeout": {
+                                                    "key": "timeout",
+                                                    "value": "5000",
+                                                    "name": "",
+                                                    "label": "Close After (in milliseconds)\n    Close After (in milliseconds)",
+                                                    "isField": false,
+                                                    "isPreselect": false,
+                                                    "fieldValueType": "manual",
+                                                    "data_type": "number",
+                                                    "isDynamic": false,
+                                                    "editor_type": ""
+                                                }
+                                            },
+                                            "type": "TOAST",
+                                            "outputs": [],
+                                            "dual_output_action": false,
+                                            "next_actions": [
+                                                "end_iterate_task"
+                                            ],
+                                            "prev_actions": [
+                                                "RpVA9i9wGC9CROPo5"
+                                            ]
+                                        }
+                                    ],
+                                    "next_actions": [
+                                        "end_iterate_task"
+                                    ],
+                                    "prev_actions": [
+                                        "RvSXsfnWAEhC4PEhZ"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "RfEQaUqKSLppw34Ct",
+                            "execution_editor_type": "JSEditor",
+                            "execution_condition_variable_with_name": "",
+                            "execution_condition_variable": "",
+                            "execution_environments": [
+                                "dev",
+                                "beta",
+                                "prod"
+                            ],
+                            "unique_name": "REFRESH_UPDATE",
+                            "label": "",
+                            "wait_till_completion": false,
+                            "fields": {
+                                "dhqCtrlIds": {
+                                    "key": "dhqCtrlIds",
+                                    "value": [
+                                        "list_c34RgYL3bknztjriJ8vq"
+                                    ],
+                                    "name": [
+                                        "tablegrid"
+                                    ],
+                                    "label": "Enter Control name\n  Enter Control name",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "string",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                },
+                                "triggerDependentDataQuery": {
+                                    "key": "triggerDependentDataQuery",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Trigger Dependent Data Query",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                },
+                                "tableGridPagination": {
+                                    "key": "tableGridPagination",
+                                    "value": true,
+                                    "name": "",
+                                    "label": "Maintain Pagination",
+                                    "isField": false,
+                                    "isPreselect": false,
+                                    "fieldValueType": "manual",
+                                    "data_type": "boolean",
+                                    "isDynamic": false,
+                                    "editor_type": "",
+                                    "evaluateValue": true
+                                }
+                            },
+                            "type": "REFRESHCTRLDATA",
+                            "outputs": [],
+                            "dual_output_action": false,
+                            "next_actions": [],
+                            "prev_actions": [
+                                "RiZ1D4bdl6oAt36ig"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "branch_count": 0,
+            "next_actions": [],
+            "prev_actions": [],
+            "lastActionId": [
+                "Ry4EWY9LJfQzxWaFU",
+                "RfEQaUqKSLppw34Ct"
+            ],
+            "firstActionId": [
+                "RGnyGKorbTyoqjKmI",
+                "RiZ1D4bdl6oAt36ig"
+            ]
+        }
+    ],
+    "category": "",
+    "interval": "",
+    "action_label": ""
+}
