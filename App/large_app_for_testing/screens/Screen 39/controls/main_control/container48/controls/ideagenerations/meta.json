@@ -1,0 +1,214 @@
+{
+    "__dhq_default_formula_Dtype": "string",
+    "__dhq_formula_Dtype": "string",
+    "__dhq_keywords_mapping_Dtype": "object",
+    "__LiveData_Dtype": "object",
+    "allow_options_addition_in_editor": true,
+    "background_color": "var(--DHQ-primary-light-color)",
+    "border_color": "var(--DHQ-primary-color)",
+    "caching": false,
+    "cid": "c6361RUPiQiBNHg14vKQ6b",
+    "class_name": "test",
+    "ctrl_id": "",
+    "data_submission_enabled": true,
+    "data_type": "string",
+    "default_field_options_structure": {
+        "name": "Option n",
+        "selected": false
+    },
+    "dfmv_selected": "default",
+    "dhq_config": {
+        "strict_update": [
+            "for_localization",
+            "dhq_config",
+            "ui_input_config",
+            "enable_ui_input",
+            "show_new_property",
+            "valueEditedOnRunTime",
+            "valueOnBuilder"
+        ],
+        "update_to_theme_varaibles": [
+            "label_font_size",
+            "label_font_size_unit",
+            "label_font_weight",
+            "label_text_color",
+            "selected_text_config_font_size",
+            "selected_text_config_font_size_unit",
+            "text_config_font_size",
+            "text_config_font_size_unit",
+            "selected_text_config_font_weight",
+            "text_config_font_weight",
+            "selected_text_config_text_color",
+            "text_config_text_color",
+            "radio_color",
+            "border_color",
+            "background_color"
+        ]
+    },
+    "dhq_data_process": "",
+    "dhq_default_data_process": "",
+    "dhq_default_keywords_mapping": [],
+    "dhq_external_css": {
+        "addCode": false,
+        "data": {}
+    },
+    "dhq_nsf_replaced": false,
+    "dhq_olddt_map": {},
+    "dhq_req_stats": {
+        "status": ""
+    },
+    "dhq_submit_condition": "always",
+    "dhq_tfd": true,
+    "dhqEvtConverted": true,
+    "dhqGrid": {
+        "w": 22,
+        "h": 21,
+        "x": 1,
+        "y": 1
+    },
+    "dhqGridDesktop": {
+        "w": 22,
+        "h": 17,
+        "x": 1,
+        "y": 1
+    },
+    "dhqMGridChanged": true,
+    "disabled": false,
+    "enable_fx": {},
+    "enable_ui_input": true,
+    "field_available_in_database_editor": true,
+    "field_composition_type": "list",
+    "field_config": {},
+    "field_data_model": "",
+    "field_data_model_binding_default_value_query": "DATABUILDER()",
+    "field_data_model_binding_default_value_query_with_id": "DATABUILDER()",
+    "field_data_model_binding_formula": "",
+    "field_data_model_binding_manual_query": "[\"Finance\",\"Supply Chain\",\"Manufacturing\",\"Procurement\",\"Marketing\",\"Sales\"]",
+    "field_data_model_binding_manual_query_with_id": "[\"Finance\",\"Supply Chain\",\"Manufacturing\",\"Procurement\",\"Marketing\",\"Sales\"]",
+    "field_data_model_binding_type": "manual_query",
+    "field_database_editor_data_format": "single_select",
+    "field_datatypes": [],
+    "field_display_key_name": "ideagenerations",
+    "field_editable_in_database_editor": true,
+    "field_fullview": false,
+    "field_key_name": "dhq_select_button_c6361RUPiQiBNHg14vKQ6b",
+    "field_options": {
+        "options": [
+            {
+                "name": "Finance",
+                "selected": true
+            },
+            {
+                "name": "Supply Chain",
+                "selected": false
+            },
+            {
+                "name": "Manufacturing",
+                "selected": false
+            },
+            {
+                "name": "Procurement",
+                "selected": false
+            },
+            {
+                "name": "Marketing",
+                "selected": false
+            },
+            {
+                "name": "Sales",
+                "selected": false
+            }
+        ]
+    },
+    "field_responsive": false,
+    "field_type": "dhq_select_button",
+    "field_values_addition_enabled_in_database_editor": true,
+    "field_values_source": "field_options.options",
+    "flex_control": true,
+    "for_localization": {
+        "static_msgs": [
+            "Please fill other option field",
+            "Please choose an option"
+        ],
+        "dynamic_msgs_keys": [
+            "label",
+            "tooltip",
+            "tip_description"
+        ],
+        "concated_msgs": []
+    },
+    "formbuilder_theme": "var(--theme-color-light)",
+    "formula_property_list": {},
+    "grid_dynamic_height": true,
+    "grid_maintain_space": false,
+    "grid_max_height": "",
+    "grid_max_height_unit": "px",
+    "hidden": false,
+    "hide_icon": true,
+    "input_control_height": "40px",
+    "input_font_color": "#444444",
+    "input_font_size": "14px",
+    "input_font_weight": "400",
+    "input_placeholder_font_weight": "400",
+    "input_placeholder_text_color": "#bbbbbb",
+    "input_placeholder_text_size": "13px",
+    "is_master_control": false,
+    "is_outlet_control": false,
+    "is_repeat_outlet_control": false,
+    "is_variable": false,
+    "isDhqGridCtrl": true,
+    "isDhqHideOnDesktop": false,
+    "isDhqHideOnMobile": false,
+    "label": "Idea Generations",
+    "label_font_size": "20",
+    "label_font_size_unit": "px",
+    "label_font_weight": "500",
+    "label_font_weight_class": "font-weight-normal",
+    "label_hidden": false,
+    "label_left_width": "33",
+    "label_left_width_unit": "%",
+    "label_position": "top",
+    "label_text_alignment": "left",
+    "label_text_color": "var(--DHQ-primary-font-color)",
+    "other_placeholder": "Write here...",
+    "parent_id": "grid_panel_c6360RMssD2r2o5dVxKkmB",
+    "property_mapped": {},
+    "property_value_mapped": {},
+    "radio_color": "#22C58B",
+    "required": false,
+    "sb_mode": {
+        "main": "Fx",
+        "default": "Fx"
+    },
+    "selected_text_config_font_size": 14,
+    "selected_text_config_font_size_unit": "px",
+    "selected_text_config_font_weight": 500,
+    "selected_text_config_text_color": "var(--DHQ-primary-color)",
+    "selection_type": "single",
+    "show_description": true,
+    "show_dfm": false,
+    "show_new_property": true,
+    "show_tooltip": false,
+    "sid": "sc154Rqd21yfCv9JkJOIEY",
+    "tabIndex": "",
+    "text_config_font_size": 14,
+    "text_config_font_size_unit": "px",
+    "text_config_font_weight": 400,
+    "text_config_text_color": "var(--DHQ-primary-font-color)",
+    "tip_description": "Filter options ",
+    "toggle_others": false,
+    "tooltip": "",
+    "type": "input",
+    "ui_input_config": {
+        "type": "LIST_BUILDER",
+        "label": "Options",
+        "option": {
+            "default": "Option"
+        }
+    },
+    "unique_name_change": false,
+    "valueEditedOnRunTime": false,
+    "valueOnBuilder": [],
+    "visibility": true,
+    "wrapper_content_alignment": "flex-start"
+}

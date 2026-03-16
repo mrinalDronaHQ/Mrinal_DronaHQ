@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "company_name": "Apple Inc.",
+        "industry": "Technology",
+        "market_value": "2.9T",
+        "revenue": "394B",
+        "employees": 154000,
+        "headquarters": "Cupertino, CA, USA",
+        "ceo": "Tim Cook",
+        "founded_year": 1976,
+        "description": "Global leader in consumer electronics and software"
+    },
+    {
+        "id": 2,
+        "company_name": "Microsoft Corporation",
+        "industry": "Technology",
+        "market_value": "2.5T",
+        "revenue": "211B",
+        "employees": 221000,
+        "headquarters": "Redmond, WA, USA",
+        "ceo": "Satya Nadella",
+        "founded_year": 1975,
+        "description": "Pioneering software and cloud computing company"
+    },
+    {
+        "id": 3,
+        "company_name": "Amazon Inc.",
+        "industry": "E-commerce",
+        "market_value": "1.7T",
+        "revenue": "524B",
+        "employees": 1600000,
+        "headquarters": "Seattle, WA, USA",
+        "ceo": "Andy Jassy",
+        "founded_year": 1994,
+        "description": "Largest online retailer and cloud computing provider"
+    },
+    {
+        "id": 4,
+        "company_name": "Alphabet Inc.",
+        "industry": "Technology",
+        "market_value": "1.8T",
+        "revenue": "282B",
+        "employees": 190000,
+        "headquarters": "Mountain View, CA, USA",
+        "ceo": "Sundar Pichai",
+        "founded_year": 1998,
+        "description": "Parent company of Google and other ventures"
+    },
+    {
+        "id": 5,
+        "company_name": "Tesla Inc.",
+        "industry": "Automotive",
+        "market_value": "800B",
+        "revenue": "95B",
+        "employees": 140000,
+        "headquarters": "Austin, TX, USA",
+        "ceo": "Elon Musk",
+        "founded_year": 2003,
+        "description": "Leading electric vehicle and clean energy company"
+    },
+    {
+        "id": 6,
+        "company_name": "Berkshire Hathaway",
+        "industry": "Conglomerate",
+        "market_value": "750B",
+        "revenue": "302B",
+        "employees": 372000,
+        "headquarters": "Omaha, NE, USA",
+        "ceo": "Warren Buffett",
+        "founded_year": 1839,
+        "description": "Diversified multinational conglomerate"
+    },
+    {
+        "id": 7,
+        "company_name": "NVIDIA Corporation",
+        "industry": "Semiconductors",
+        "market_value": "1.2T",
+        "revenue": "38B",
+        "employees": 26000,
+        "headquarters": "Santa Clara, CA, USA",
+        "ceo": "Jensen Huang",
+        "founded_year": 1993,
+        "description": "Leader in AI and GPU technology"
+    },
+    {
+        "id": 8,
+        "company_name": "Meta Platforms",
+        "industry": "Social Media",
+        "market_value": "1.0T",
+        "revenue": "117B",
+        "employees": 86000,
+        "headquarters": "Menlo Park, CA, USA",
+        "ceo": "Mark Zuckerberg",
+        "founded_year": 2004,
+        "description": "Parent company of Facebook, Instagram, and WhatsApp"
+    },
+    {
+        "id": 9,
+        "company_name": "Saudi Aramco",
+        "industry": "Oil & Gas",
+        "market_value": "2.1T",
+        "revenue": "604B",
+        "employees": 68000,
+        "headquarters": "Dhahran, Saudi Arabia",
+        "ceo": "Amin H. Nasser",
+        "founded_year": 1933,
+        "description": "Largest oil producer in the world"
+    },
+    {
+        "id": 10,
+        "company_name": "Johnson & Johnson",
+        "industry": "Healthcare",
+        "market_value": "450B",
+        "revenue": "95B",
+        "employees": 152700,
+        "headquarters": "New Brunswick, NJ, USA",
+        "ceo": "Joaquin Duato",
+        "founded_year": 1886,
+        "description": "Global healthcare and pharmaceutical giant"
+    }
+]
