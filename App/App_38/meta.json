@@ -20,5 +20,6 @@
             "workflowIdAndNameMapping": {}
         }
     },
-    "is_new_template": true
+    "is_new_template": true,
+    "apiDepList": []
 }
