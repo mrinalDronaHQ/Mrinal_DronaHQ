@@ -1,0 +1,24 @@
+{
+    "automation": {
+        "_id": "69e9ab1a3c6c7e2dcca92865",
+        "name": "Test_Automation",
+        "description": "",
+        "active": false,
+        "data": {
+            "actions": []
+        },
+        "updated_by": "tabil31649@eqvox.com",
+        "updated_at": "2026-04-23T05:16:10.644Z",
+        "created_by": "tabil31649@eqvox.com",
+        "created_at": "2026-04-23T05:16:10.644Z"
+    },
+    "apiDetails": [],
+    "managedList": {
+        "database": [],
+        "fileStorage": [],
+        "pdf": []
+    },
+    "onprem_version": "3.9.8-stable",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
